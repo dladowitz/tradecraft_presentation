@@ -1,28 +1,28 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
-  
+
   <head>
     <meta charset="utf-8">
-    
-    <title>RailsBridge Ruby Workshop at Code for America</title>
+
+    <title>RailsBridge Ruby Workshop at VerticalResponse</title>
 
     <meta name="description" content="Slides and links to a full-day Ruby immersion workshop">
     <meta name="author" content="RailsBridge & Code for America">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    
+
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
 
     <link rel="stylesheet" href="lib/css/zenburn.css">
   </head>
-  
+
   <body>
-    
+
     <div class="reveal">
 
       <!-- Used to fade in a background when a specific slide state is reached -->
@@ -31,224 +31,390 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>Ruby on Rails Workshop</h1>
-          <h3 class="inverted">July 20 & 21, 2012 &middot; San Francisco</h3>
-          <p>
-            <img src="img/logo-cfa.png" alt="Code for America" width="200"> + 
-            <img src="img/logo-railsbridge.png" alt="RailsBridge" width="200"> + 
-            <img src="img/logo-oreilly.gif" alt="OReilly Media" width="200">
-          </p>
+          <h1>RailsBridge<h1>
+          <h2>Ruby on Rails Workshop</h2>
+          <h3 class="inverted">Oct 18 & 19, 2013 &middot; San Francisco</h3>
         </section>
-        
-        <section>
-          <section>
-            <h1>Where are we?</h1>
-            <p><img src="img/logo-cfa.png" alt="Code for America" width="100%" /></p>
-          </section>
-          <section>
-            <h1>Be a 2013 Fellow</h1>
-            <p><a href="http://www.codeforamerica.org/apply">http://www.codeforamerica.org/apply</a></p>
-          </section>
-        </section>
-        
-        <section>
-          <h1>Thanks to our sponsor!</h1>
-          <p><img src="img/logo-oreilly.gif" alt="OReilly Media" width="100%"></p>
-        </section>
-        
+
         <section>
           <h1>Today is open source.</h1>
-          
+
           <p>This workshop is a community project to<br> which many individuals have contributed.</p>
           <p>All of the materials are open!</p>
           <ul>
-            <li>RailsBridge's <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Open Workshop Project</a></li>
+            <li>RailsBridge's <a href="https://github.com/railsbridge/docs/wiki">Open Workshop Project</a></li>
             <li>RailsBridge's <a href="http://github.com/railsbridge">GitHub page</a></li>
             <li>Curriculum: <a href="http://curriculum.railsbridge.org">curriculum.railsbridge.org</a></li>
           </ul>
         </section>
-        
+
         <!-- Example of nested vertical slides -->
         <section>
           <section>
             <h2>Why are we here?</h2>
             <p>To learn Ruby on Rails!</p>
             <p>&nbsp;</p>
-            <h2 class="fragment">And What's that?</h2>
+            <h2 class="fragment">And what is that?</h2>
             <div  class="fragment">
-              <p>Great question.</p>
-              <p>First, a brief digression&hellip;</p>
-              <p>&hellip; into web application plumbing.</p>
-              <p class="fragment">(No plungers necessary.)</p>
+              <p>That is an excellent question.</p>
             </div>
-          </section>
-          <section>
-            <h2>Web Application Plumbing</h2>
-            <p><img src="img/diagram-webapp.png" alt="Diagram of a generalized web application." width="715" height="490" /></p>
-          </section>
-          <section>
-            <h2>Ruby is a programming language.</h2>
-            <ul>
-              <li class="fragment">First released in 1995.</li>
-              <li class="fragment">It's an object-oriented, general-purpose language.</li>
-              <li class="fragment"><code>&lt;opinion></code>It's quite nice.<code>&lt;/opinion></code></li>
-            </ul>
-            <p>&nbsp;</p>
-            <pre class="fragment"><code># Outputs "I love Ruby"
-say = "I love Ruby"
-puts say
- 
-# Outputs "I *LOVE* RUBY"
-say['love'] = "*love*"
-puts say.upcase
- 
-# Outputs "I *love* Ruby" five times
-5.times { puts say }</code></pre>
-          </section>
-          <section>
-            <h2>Rails is a framework.</h2>
-            <p>Frameworks are collections of scripts and utilities<br>that simplify writing web applications.</p>
-            <p>So what makes Rails special?</p>
-            <ul>
-              <li class="fragment">It's written in the Ruby language.</li>
-              <li class="fragment">It's <strong>opinionated</strong>.</li>
-              <li class="fragment">It emphasizes <strong>convention over configuration</strong>.</li>
-              <li class="fragment">It encourages <strong>DRY</strong> -- Don't Repeat Yourself -- coding.</li>
-              <li class="fragment">It's database-agnostic.</li>
-              <li class="fragment">First developed by @dhh of 37signals.</li>
-              <li class="fragment">Open-sourced in 2004; shipped w/ Mac OS 10.5 in 2007.</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Putting it all together...</h2>
-            <br>
-            <h3>Rails is a <u>FRAMEWORK</u> for <u>WEB APPLICATIONS</u> written in the Ruby <u>LANGUAGE</u>.</h3>
-            <p>
-              <img src="img/logo-ruby.jpg" alt="ruby-logo" height="100">
-              <span style="font-size: 3em;"> + </span>
-              <img src="img/logo-rails.jpg" alt="rails_logo" height="100">
-              <span style="font-size: 3em;"> = </span>
-              <span style="font-size: 6em;">&#x2665;</span>
-            </p>
           </section>
         </section>
 
         <section>
-          <h2>What are we doing today?</h2>
+          <h2>Ruby is a programming language.</h2>
+          <h2 class ="fragment">Rails is a framework.</h2>
+          <h1 class ="fragment">Huh?</h1>
+        </section>
+
+        <section>
+          <h2>Say you want to build a house</h2>
+          <img class="fragment" src="img/house.jpg" width=75%>
+        </section>
+
+        <section>
+          <h2>A Language is a collection of raw materials and power tools</h2>
+          <img class="fragment" src="img/power-tools.jpg" width=40%>
+          <img class="fragment" src="img/home_depot.jpg" width=40%>
+        </section>
+
+
+
+        <section>
+          <h2>A Framework is a bunch of prebuilt stuff every house needs</h2>
+          <img class="fragment" src="img/doors.jpg" width=30%>
+          <!-- <img class="fragment" src="img/windows.jpg" width=25%> -->
+          <img class="fragment" src="img/sink.jpg" width=30%>
+          <img class="fragment" src="img/cabinet.jpg" width=30%>
+        </section>
+
+        <section>
+          <h2>Programmers call these Libraries</h2>
+          <div class="fragment">
+            <h3>Ruby Programmers call these 'Gems'<h3>
+          <img class="fragment" src="img/octocat.png" width=40%px>
+          <h5 class="fragment">Thats an Octocat</h5>
+          <h6 class="fragment">You'll learn to love him</h5>
+        </section>
+
+        <section>
+          <h2>Putting it all together...</h2>
+          <br>
+          <h3>Rails is a <u>FRAMEWORK</u> for <u>WEB APPLICATIONS</u> written in the Ruby <u>LANGUAGE</u>.</h3>
+          <p>
+            <img src="img/logo-ruby.jpg" alt="ruby-logo" height="100">
+            <span style="font-size: 3em;"> + </span>
+            <img src="img/logo-rails.jpg" alt="rails_logo" height="100">
+            <span style="font-size: 3em;"> = </span>
+            <span style="font-size: 6em;">&#x2665;</span>
+          </p>
+        </section>
+
+        <section>
+          <h2>Goal for today:</h2>
+          <h3 class="fragment">To have a built and deployed a web application - live on the internet!</h3>
+          <h1 class="fragment">Wait, no. thats not the real goal</h1>
+        </section>
+
+        <section>
+          <h2>What's the real goal?</h2>
+          <h1 class="fragment"> We are learning to like coding</h1>
+
           <div class="fragment" style="margin-top:2em;">
             <h3>Some of us will learn Ruby from the ground up.</h3>
             <p>Focus on learning to program.</p>
           </div>
           <div class="fragment" style="margin-top:2em;">
-            <h3>Some of us will learn Rails, Heroku, and GitHub.</h3>
-            <p>Focus on tools and building a web application.</p>
+            <h3>Some of us will learn Rails, Heroku, and Git.</h3>
+            <!-- <p>Focus on tools and building a web application.</p> -->
           </div>
         </section>
 
         <section>
-          <h2>What tools &amp; services will we use?</h2>
-          <ul>
-            <li class="fragment"><b>rails</b>: a web application framework written in Ruby.</li>
-            <li class="fragment"><b>rake</b>: an easy way to run tasks. (like <code>make</code> for Ruby.)</li>
-            <li class="fragment"><b>database</b>: we'll use SQLite, but could be any relational database.</li>
-            <li class="fragment"><b>editor</b>: KomodoEdit or your favorite text editor.</li>
-            <li class="fragment"><b>heroku</b>: free hosting for Rails applications.</li>
-          </ul>
+          <h2>Don't be shy</h2>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>Ask Questions.</h3>
+            <p>Lots of questions.</p>
+          </div>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>We've got Teachers and TAs.</h3>
+            <p>They like answering questions. Its why they showed up.</p>
+          </div>
         </section>
 
-        <section data-state="soothe">
+        <section>
+          <h2>But wait, what's the Real Real Goal?</h2>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>Learning the tenacity to stick with it and to dive back into the keyboard</h3>
+          </div>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>Becoming comfortable not knowing.</h3>
+            <p class="fragment">I'm still not there.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Programming is often:</h2>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>Confusing</h3>
+          </div>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>Slow</h3>
+            <p class="fragment">When you can't get something to work</p>
+          </div>
+          <div class="fragment" style="margin-top:2em;">
+            <h3>Scary</h3>
+            <p class="fragment">When you think everyone else knows whats going on</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Programming has thousands of new terms and jargon</h2>
+          <ul>
+            <li class="fragment"><b>git</b>: A versioning system.</li>
+            <li class="fragment"><b>rake</b>: A tool for running tasks)</li>
+            <li class="fragment"><b>database</b>: A place to store lots of data.</li>
+            <li class="fragment"><b>editor</b>: KomodoEdit or your favorite text editor.</li>
+            <li class="fragment"><b>heroku</b>: A place to host your Rails website.</li>
+            <li class="fragment"><b>DRY</b>: Don't Repeat Yourself.</li>
+            <li class="fragment"><b>Convention Over Configuration</b></li>
+            <li class="fragment"><b>And way way way more.</b></li>
+          </ul>
+
+          <h3 class="fragment">You're teachers will use jargon without even knowing it. Interupt them.</h3>
+        </section>
+
+        <section>
           <h2>Schedule</h2>
           <ul>
           <li>9 - 9:30am: Sign in, coffee, breakfast</li>
-          <li>9:45 - 10:15am: Intro!</li>
-          <li>10:15 - 11:15am: Session 1</li>
-          <li>11:30 - 12:30pm: Session 2</li>
-          <li>12:30 - 1:30pm: Lunch!</li>
-          <li>1:30 - 2:45pm: Session 3</li>
-          <li>3:00 - 4:15pm: Session 4</li>
-          <li>4:15 - 5pm: Wrapup and final questions</li>
-          <li>5pm - onward: Beer O'Clock. Happy hour at Azucar!</li>
+          <li>9:30 - 9:50am: Intro Presentation</li>
+          <li>10:00 - 12:00am: Session 1</li>
+          <li>12:00 - 12:40pm: Lunch!</li>
+          <li>12:40 - 2:45pm: Session 2</li>
+          <li>2:45 - 3:00pm: Break</li>
+          <li>3:00 - 4:30pm: Session 3</li>
+          <li>4:30 - 5pm: Closing presentation and retrospective</li>
+          <li>5pm - onward: Beer O'Clock. Happy hour at Murphys Pub!</li>
           </ul>
         </section>
 
         <section data-state="alert">
-          <h1>Ask Questions!</h1>
-          <p>No such thing as a dumb question. For serious.<br><br><br></p>
-          <h1>Don't be shy!</h1>
-          <p>TAs and teachers are here to help.</p>
+          <h2>Oh and about the Ruby Community...</h2>
+          <h1 class="fragment">It's awesome.<br></h1>
+          <h3 class="fragment">There are 90 Meetups with 50 miles of here tagged with 'Ruby'.<br></h3>
+          <a href="http://www.meetup.com/find/?keywords=ruby&radius=50&userFreeform=San+Francisco%2C+CA%2C+USA&mcId=z94101&events=true&eventFilter=mysugg" class="fragment">Meetup events happening soon<br></a>
         </section>
-        
-        <section>
-          <h2>Your Section</h2>
-          <p>You've already been assigned a section.</p>
+
+        <section data-state="alert">
+          <h1>Where are we?</h1>
+          <p><img class="fragment" src="img/tapjoy2.jpg" alt="TapJoy" width="75%" /></p>
+        </section>
+
+        <section data-state="alert">
+          <h2>Did I mention we are hiring?</h2>
+          <p class="fragment">We currently have 39 openings</p>
+          <p class="fragment">26 in Engineering</p>
+          <p class="fragment">http://info.tapjoy.com/about-tapjoy/careers/</p>
+          <h2 class="fragment">Make sure to tell the recruiter I referred you</h2>
+        </section>
+
+        <section data-state="alert">
+          <h2>If you need help find a Tapjoyer</h2>
+          <p class="fragment">Laura</p>
+          <img class="fragment" src="img/laura.jpg" width=80%>
+        </section>
+
+        <section data-state="alert">
+          <h2>Or</h2>
+          <p class="fragment">Chris</p>
+          <img class="fragment" src="img/nixon.jpg" width=70%>
+        </section>
+
+        <section data-state="alert">
+          <h2>Or</h2>
+          <p class="fragment">Melinda</p>
+          <img class="fragment" src="img/melinda2.jpg" width=40%>
+        </section>
+
+        <section data-state="alert">
+          <h2>Or</h2>
+          <p class="fragment">Raghu</p>
+          <p class="fragment">No, not the sauce</p>
+          <img class="fragment" src="img/raghu2.jpg" width=75%>
+        </section>
+
+        <section data-state="alert">
+          <h2>Or</h2>
+          <p class="fragment">Ian</p>
+          <img class="fragment" src="img/ian.png">
+          <p class="fragment">Sorry, I couldn't find any funny photos</p>
+        </section>
+
+        <section data-state="alert">
+          <h2>Or</h2>
+          <p class="fragment">Aveline</p>
+          <img class="fragment" src="img/aveline.jpg" width=75%>
+          <p class="fragment">Not her baby</p>
+        </section>
+
+        <section data-state="alert">
+          <h2>And just to be fair</h2>
+          <img class="fragment" src="img/david.jpg" width=70%>
+        </section>
+
+        <section data-state="alert">
+          <h2>House Rules</h2>
           <ul>
-            <li>(B) Beginner: Board Room</li>
-            <li>(AB) Adv. Beginner: Upstairs Panda #5, Possum #6</li>
-            <li>(ABW) Adv. Beginner Windows: Upstairs Conf Room</li>
-            <li>(I) Intermediate: Bakery / Locker Room</li>
-            <li>(ANR) Advanced Non-Rails: Right here</li>
-            <li>(A) Advanced: Couches by the bike room</li>
+            <li class="fragment"><b>1st Rule</b>: Don't talk about fight club (obviously)</li>
+            <li class="fragment"><b>2nd Rule</b>: Don't steal stuff (or I'll get fired)</li>
+            <li class="fragment"><b>3rd Rule</b>: Watch out for Pirates and Radiation leaks</li>
+            <li class="fragment"><b>4th rule</b>: Help clean up (so I get a raise)</li>
           </ul>
         </section>
-        
-        <section>
-          <h2>Oh no! I'm in the wrong section!</h2>
-          <br>
-          <p>Ain't no thang.</p>
-          <br>
-          <p>If class starts and it doesn't seem right for you,<br>it's TOTALLY OKAY to get up and move.</p>
-          <br>
-          <p>(Nobody will get offended, promise!<br>We want you to be in the right place.)</p>
+
+
+        <section data-state="alert">
+          <h2>Ok, lets class up</h2>
         </section>
-        
-        <section>
+
+
+        <section data-state="alert">
+          <h2>But, wait, what if get put in the wrong class!</h2>
+          <br>
+          <div class="fragment">
+            <p>Ain't no thang.</p>
+            <br>
+            <p>If class starts and it doesn't seem right for you,<br>it's TOTALLY OKAY to get up and move.</p>
+            <br>
+            <p>(Nobody will get offended, promise!<br>We want you to be in the right place.)</p>
+          <div>
+        </section>
+
+        <section data-state="alert">
+          <h2>Class Assignments</h2>
+          <p class="fragment">Price is Right Style.</p>
+          <img class="fragment" src="img/price.gif" width=80%>
+        </section>
+
+        <section data-state="alert">
           <h1>Ready? Break!</h1>
           <p><img src="img/ready-break.jpg" alt="ready-break" width="500" height="354" /></p>
         </section>
-        
-        <section>
+
+        <section data-state="soothe">
           <h2>You came.</h2>
           <h2>You saw.</h2>
           <h2>You Ruby'd.</h2>
           <h2>You Rail'd.</h2>
           <p>How'd it go?</p>
         </section>
-        
-        <section>
-          <h1>Help Us Level Up</h1>
+
+        <section data-state="soothe">
+          <h1>What did'jall learn today?</h1>
           <div class="fragment">
-            <h3>In the coming days</h3>
-            <p>MeetUp will automatically ask you to review this event. Please help us evolve by replying and being honest.<br><br></p>
+            <h2>Students?<br><br></h2>
           </div>
           <div class="fragment">
-            <h3>In a few months</h3>
-            <p>RailsBridge is looking at medium-term effects of this workshop. We'll send you a "what happened to you" survey in a few months. Please fill it out!</p>
+            <h2>Volunteers?</h2>
           </div>
-        </section>
-        
-        <section>
-          <h2>Feel like thanking us?</h2>
-          <p>Here's how:</p>
-          <ol>
-            <li class="fragment"><b>Become a volunteer!</b><br>TA or teach at the next workshop.</li>
-            <li class="fragment"><b>Become an organizer!</b><br>Rails expertise not required.<br>Cat-herding skills helpful.</li>
-          </ol>
         </section>
 
-        <section>
+        <section data-state="soothe">
+          <div>
+            <h3> Thanks to Tapjoy for sponsoring</h3>
+            <img src="img/tapjoy.jpg" width = "600">
+          </div>
+          <div class="fragment">
+            <br>
+            <h3>And by Sponsoring, I mean paying.</h3>
+          </div>
+        </section>
+
+        <section data-state="soothe">
+            <h3>Super Big Thanks to Laura</h3>
+              <img src="img/laura.jpg" width = "800">
+        </section>
+
+
+        <section data-state="soothe">
+            <h3> Big thanks to Chris, Melinda, Ian, Aveline, Matt</h3>
+              <img src="img/matt.jpg" width = 20%>
+              <img src="img/chris.jpg" width = 20%>
+              <img src="img/melinda.png" width = 20%>
+              <img src="img/ian.png" width = 20%>
+              <img src="img/aveline.jpg" width = 20%>
+              <p class="fragment"> but not as big as to Laura</p>
+        </section>
+        <section data-state="soothe">
+            <h3> Big Thanks to Raghu and Chiodo</h3>
+              <img src="img/raghu2.jpg" width = 45%>
+              <img src="img/chiodo.jpg" width = 45%>
+              <p class="fragment">Bigger than to chris, melinda, ian, aveline, and matt, but not as big as to Laura</p>
+        </section>
+
+        <section data-state="soothe">
+            <h3> Big thanks to Lillie, bigger than Chris, but not as big as Jackie and Amir</h3>
+              <img src="img/lillie2.jpg" width = "300">
+        </section>
+
+<!--         <section data-state="soothe">
+            <h3> Big thanks to Stephanie, bigger than Amir, but not as big as Jackie</h3>
+              <img src="img/stephanie.jpg" width = "300">
+        </section> -->
+
+        <section data-state="soothe">
+          <h2>Help Us Level Up</h2>
+          <div class="fragment">
+            <p>Here's how:</p>
+            <ol>
+              <li class="fragment"><b>Become a volunteer!</b><br>TA or teach at the next workshop.</li>
+              <li class="fragment"><b>Become an organizer!</b><br>Rails expertise not required.</li>
+              <div class="fragment">
+                <img src="img/catherder.jpg" width= 60%>
+                <p> Cat-herding skills helpful. </p>
+              </div>
+            </ol>
+          </div>
+        </section>
+
+        <section data-state="soothe">
           <h2>How do I keep learning?</h2>
           <ul>
             <li>Join the SFRuby meetup at <a href="http://sfruby.info">sfruby.info</a></li>
-            <li>Grab a flyer.</li>
+            <li>Check out resources on Railsbridge.org <a href="http://railsbridge.org/learn/resources">Keep Learning</a></li>
           </ul>
         </section>
-        
-        <section>
-          <h2>The <code contenteditable>&nbsp;<del>End</del>&nbsp;</code></h2>
-          <p>Let's go drink!</p>
-          <p><img src="img/beer.jpg" alt="Beer pitcher" width="360"></p>
+
+
+              <section data-state="soothe">
+          <h2>Lets hang out at a bar</h2>
+          <div class="fragment">
+            <p>After-party at Murphy's pub</p>
+          </div>
+          <div class="fragment">
+            <p>Google says its, like, 492 ft away</p>
+          </div>
+          <div class="fragment">
+            <p>Google also says it's 2 mins by foot</p>
+          </div>
+          <div class="fragment">
+            <p>Google also also says it's 43 seconds by car</p>
+          </div>
+          <div class="fragment">
+            <p>And if you ask Google how long the bus will take....it tells you to walk (for real)</p>
+          </div>
         </section>
-      </div>
+
+        <section data-state="soothe">
+          <h2>And lastly....</h2>
+          <h2 class="fragment">Creepy Wonka says:</h2>
+          <img class="fragment" src="http://cdn.memegenerator.net/instances/400x/36981772.jpg">
+        </section>
+
+
+    </div>
+
 
       <!-- The navigational controls UI -->
       <aside class="controls">
@@ -260,7 +426,7 @@ puts say.upcase
 
       <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
       <div class="progress"><span></span></div>
-      
+
     </div>
 
     <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
@@ -292,12 +458,12 @@ puts say.upcase
           controls: true,
           progress: true,
           history: true,
-          
+
           theme: query.theme || 'default', // default/neon/beige
           transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
         });
       } );
-      
+
       // Load third party scripts
       head.js( 'lib/js/classList.js' );
       head.js( 'lib/js/highlight.js', function() {
@@ -311,6 +477,6 @@ puts say.upcase
         head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
       }
     </script>
-    
+
   </body>
 </html>
